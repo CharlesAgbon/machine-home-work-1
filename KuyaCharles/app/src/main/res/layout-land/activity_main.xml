@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--Author: Charles Roland Agbon-->
+    <RelativeLayout
+        android:layout_width="569dp"
+        android:layout_height="495dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Title"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="207dp"
+            android:layout_below="@+id/editText4"
+            android:ems="10"
+            android:hint="Content"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="194dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="195dp"
+            android:text="Send" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="179dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/editText"
+            android:layout_toEndOf="@+id/btn_send"
+            android:text="Clear" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="212dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/editText"
+            android:layout_toEndOf="@+id/button2"
+            android:text="Button" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
